@@ -1,0 +1,11 @@
+{
+    "name": "QA Auto Lab 01",
+    "author": "Dmitriy Naumov",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "chai": "^4.3.8",
+        "mocha": "^10.2.0",
+        "mtrx": "^0.1.6"
+    }
+}
