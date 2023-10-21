@@ -22,6 +22,31 @@ class Matrix extends Array {
             cols: this[0].length 
         }
     }
+
+    addScalar (value) {
+        let options = this.size
+        options.fill = (i, j) => this[i][j] + value
+        return new Matrix(options)
+    }
+
+    subScalar (value) {
+        return this.addScalar(-value)
+    }
+
+    add (other) {
+        let thisSize = this.size
+        let otherSize = other.size
+        if (thisSize.rows != otherSize.rows) {
+            throw new ValueError("matrices must have the same number of rows")
+        }
+        if (thisSize.cols != otherSize.cols) {
+            throw new ValueError("matrices must have the same number of cols")
+        }
+        return new Matrix({ 
+            rows: thisSize.rows, cols: thisSize.cols, 
+            fill: (i, j) => this[i][j] + other[i][j] 
+        })
+    }
 }
 
 export default Matrix
