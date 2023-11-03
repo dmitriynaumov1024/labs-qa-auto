@@ -1,0 +1,13 @@
+{
+    "name": "QA Auto Lab 04",
+    "author": "Dmitriy Naumov",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "test": "cypress run",
+        "run": "cypress run --headed"
+    },
+    "devDependencies": {
+        "cypress": "^13.3.1"
+    }
+}
