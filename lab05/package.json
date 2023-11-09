@@ -1,0 +1,12 @@
+{
+    "name": "QA Auto Lab 05",
+    "author": "Dmitriy Naumov",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "chai": "^4.3.10",
+        "mocha": "^10.2.0",
+        "save": "^2.9.0",
+        "selenium-webdriver": "^4.14.0"
+    }
+}
